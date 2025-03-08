@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lexicon - Página Principal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="sidebar">
+        <img src="icono.png" alt="Icono Lexicon" class="logo">
+        <h2>Lexicon</h2>
+        <ul>
+            <li><a href="#"><img src="icon_inicio.png" alt="Inicio" class="icon"> Inicio</a></li>
+            <li><a href="#"><img src="icon_libros.png" alt="Mis libros" class="icon"> Mis libros</a></li>
+            <li><a href="#"><img src="icon_descubrir.png" alt="Descubrir" class="icon"> Descubrir</a></li>
+            <li><a href="#"><img src="icon_configuracion.png" alt="Configuración" class="icon"> Configuración</a></li>
+            <li><a href="#"><img src="icon_perfil.png" alt="Mi perfil" class="icon"> Mi perfil</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <h1>¡Bienvenido!</h1>
+        <h2>¿Cual será tu próxima aventura?</h2>
+        <div class="search-bar">
+            <input type="text" placeholder="Buscar...">
+        </div>
+        <h3>Recomendados para ti...</h3>
+        <div class="book-list">
+            <div class="book">
+                <img src="los_miserables.jpg" alt="Los miserables">
+                <p><strong>Los miserables</strong></p>
+            </div>
+            <div class="book">
+                <img src="el_principito.jpg" alt="El principito">
+                <p><strong>El principito</strong></p>
+            </div>
+            <div class="book">
+                <img src="rebelion_granja.jpg" alt="Rebelión en la granja">
+                <p><strong>Rebelión en la granja</strong></p>
+            </div>
+            <div class="book">
+                <img src="fantasma_canterville.jpg" alt="El fantasma de Canterville">
+                <p><strong>El fantasma de Canterville</strong></p>
+            </div>
+        </div>
+    </div>
+    <style>
+        body {
+            display: flex;
+            font-family: "Times New Roman", Times, serif;
+            margin: 0;
+            padding: 0;
+        }
+        .logo {
+        margin-left: 80px; /* Ajusta el valor según sea necesario */
+    }
+        .sidebar {
+            width: 250px;
+            background: #004d00;
+            color: white;
+            padding: 20px;
+            height: 100vh;
+        }
+        .sidebar h2 {
+            text-align: center;
+        }
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+        .sidebar ul li {
+            padding: 10px 0;
+            display: flex;
+            align-items: center;
+        }
+        .sidebar ul li a {
+            color: white;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+        .sidebar ul li a .icon {
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+        }
+        .content {
+            flex: 1;
+            padding: 20px;
+            text-align: center;
+        }
+        .search-bar input {
+            width: 80%;
+            padding: 10px;
+            margin: 20px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .book-list {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .book {
+            text-align: center;
+        }
+        .book img {
+            width: 120px;
+            height: 180px;
+            border-radius: 5px;
+        }
+    </style>
+</body>
+</html>
