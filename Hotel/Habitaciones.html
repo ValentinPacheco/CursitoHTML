@@ -5,76 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Habitaciones - Hotel Paraíso</title>
     <link rel="stylesheet" href="stylesHabitaciones.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 10px 0;
-            text-align: center;
-        }
-        nav ul {
-            list-style: none;
-            padding: 0;
-        }
-        nav ul li {
-            display: inline;
-            margin: 0 10px;
-        }
-        nav ul li a {
-            color: #fff;
-            text-decoration: none;
-        }
-        section {
-            padding: 20px;
-            text-align: center;
-        }
-        .habitacion {
-            background-color: #fff;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            margin: 20px auto;
-            padding: 20px;
-            max-width: 800px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            display: flex;
-            align-items: center;
-        }
-        .habitacion img {
-            max-width: 200px;
-            margin-right: 20px;
-            border-radius: 5px;
-        }
-        .habitacion h3 {
-            margin-top: 0;
-        }
-        #contacto {
-            background-color: #333;
-            color: #fff;
-            padding: 20px 0;
-        }
-        #contacto p {
-            margin: 5px 0;
-        }
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
-    </style>
 </head>
 <body>
     <header>
-        <h1>Conoce nuestras habitaciones</h1>
+        <h1 class="titulo-decorado">Conoce nuestras habitaciones</h1>
         <nav>
             <ul>
                 <li><a href="PaginaPrincipal.html">Inicio</a></li>
@@ -89,7 +23,7 @@
     <section>
         <h2>¡Tu confort es nuestra prioridad!</h2>
         <div class="habitacion">
-            <img src="img/habitacion_sencilla.jpg" alt="Habitación Sencilla">
+            <img src="Hsencilla.png" alt="Habitación Sencilla">
             <div>
                 <h3>Habitación Sencilla</h3>
                 <p>Pequeña, para una persona, básica y económica.</p>
@@ -101,9 +35,14 @@
                     <li>Toallas</li>
                 </ul>
             </div>
+            <div class="precio">
+                <p>Desde</p>
+                <p>$50</p>
+                <button onclick="location.href='Reservación.html'">Reserva ahora</button>
+            </div>
         </div>
         <div class="habitacion">
-            <img src="img/habitacion_doble.jpg" alt="Habitación Doble">
+            <img src="Hdoble.png" alt="Habitación Doble">
             <div>
                 <h3>Habitación Doble</h3>
                 <p>Más grande, para dos personas, con comodidades adicionales.</p>
@@ -116,9 +55,14 @@
                     <li>Toallas</li>
                 </ul>
             </div>
+            <div class="precio">
+                <p>Desde</p>
+                <p>$75</p>
+                <button onclick="location.href='Reservación.html'">Reserva ahora</button>
+            </div>
         </div>
         <div class="habitacion">
-            <img src="img/suite_de_lujo.jpg" alt="Suite de Lujo">
+            <img src="Hsuite.png" alt="Suite de Lujo">
             <div>
                 <h3>Suite de Lujo</h3>
                 <p>Amplia, con áreas separadas, comodidades premium y servicios exclusivos.</p>
@@ -134,6 +78,11 @@
                     <li>Minibar</li>
                 </ul>
             </div>
+            <div class="precio">
+                <p>Desde</p>
+                <p>$120</p>
+                <button onclick="location.href='Reservación.html'">Reserva ahora</button>
+            </div>
         </div>
     </section>
 
@@ -142,11 +91,8 @@
         <p>Email: info@hotelparaiso.com</p>
         <p>Facebook: https://www.facebook.com/HotelParaiso</p>
         <p>Instagram: https://www.instagram.com/HotelParaiso</p>
-        <p>Teléfono: +52 123 456 7890</p>
-    </section>
-    
-    <footer>
+        <p>Teléfono: +52 123 456 7890</p>        
         <p>&copy; 2025 Hotel Paraíso. Todos los derechos reservados.</p>
-    </footer>
+    </section>
 </body>
 </html>

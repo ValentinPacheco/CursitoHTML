@@ -27,6 +27,13 @@ nav ul li a {
     text-decoration: none;
 }
 
+.titulo-decorado {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid #ffffff;
+    margin-bottom: 20px;
+}
+
 section {
     padding: 20px;
     text-align: center;
@@ -38,12 +45,38 @@ section {
     border-radius: 5px;
     margin: 20px auto;
     padding: 20px;
-    max-width: 600px;
+    max-width: 800px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.habitacion img {
+    max-width: 200px;
+    margin-right: 20px;
+    border-radius: 5px;
 }
 
 .habitacion h3 {
     margin-top: 0;
+}
+
+.precio {
+    text-align: right;
+}
+
+.precio p {
+    margin: 5px 0;
+}
+
+.precio button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
 }
 
 #contacto {
