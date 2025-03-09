@@ -5,6 +5,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Habitaciones - Hotel Paraíso</title>
     <link rel="stylesheet" href="stylesHabitaciones.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+        .habitacion {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin: 20px auto;
+            padding: 20px;
+            max-width: 800px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+        }
+        .habitacion img {
+            max-width: 200px;
+            margin-right: 20px;
+            border-radius: 5px;
+        }
+        .habitacion h3 {
+            margin-top: 0;
+        }
+        #contacto {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+        }
+        #contacto p {
+            margin: 5px 0;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -23,16 +89,51 @@
     <section>
         <h2>¡Tu confort es nuestra prioridad!</h2>
         <div class="habitacion">
-            <h3>Habitación Sencilla</h3>
-            <p>Pequeña, para una persona, básica y económica.</p>
+            <img src="img/habitacion_sencilla.jpg" alt="Habitación Sencilla">
+            <div>
+                <h3>Habitación Sencilla</h3>
+                <p>Pequeña, para una persona, básica y económica.</p>
+                <ul>
+                    <li>WIFI</li>
+                    <li>TV</li>
+                    <li>Ducha</li>
+                    <li>Teléfono</li>
+                    <li>Toallas</li>
+                </ul>
+            </div>
         </div>
         <div class="habitacion">
-            <h3>Habitación Doble</h3>
-            <p>Más grande, para dos personas, con comodidades adicionales.</p>
+            <img src="img/habitacion_doble.jpg" alt="Habitación Doble">
+            <div>
+                <h3>Habitación Doble</h3>
+                <p>Más grande, para dos personas, con comodidades adicionales.</p>
+                <ul>
+                    <li>WIFI</li>
+                    <li>TV</li>
+                    <li>Ducha</li>
+                    <li>Bañera</li>
+                    <li>Teléfono</li>
+                    <li>Toallas</li>
+                </ul>
+            </div>
         </div>
         <div class="habitacion">
-            <h3>Suite de Lujo</h3>
-            <p>Amplia, con áreas separadas, comodidades premium y servicios exclusivos.</p>
+            <img src="img/suite_de_lujo.jpg" alt="Suite de Lujo">
+            <div>
+                <h3>Suite de Lujo</h3>
+                <p>Amplia, con áreas separadas, comodidades premium y servicios exclusivos.</p>
+                <ul>
+                    <li>WIFI</li>
+                    <li>TV</li>
+                    <li>Ducha</li>
+                    <li>Bañera</li>
+                    <li>Toallas</li>
+                    <li>Teléfono</li>
+                    <li>Caja fuerte</li>
+                    <li>Espacio de trabajo</li>
+                    <li>Minibar</li>
+                </ul>
+            </div>
         </div>
     </section>
 
