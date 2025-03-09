@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reservación de Hotel</title>
-    <link rel="stylesheet" href="stylesReservación.css"> <!-- Asegúrate de tener un archivo CSS para estilos -->
-    <script src="scriptsReservación.js" defer></script> <!-- Enlace al archivo JavaScript -->
+    <link rel="stylesheet" href="stylesReservación.css"> 
+    <script src="scriptsReservación.js" defer></script> 
 </head>
 <body>
     <header>
@@ -51,6 +51,7 @@
                 </select>
             </div>
             <div>
+                <h2>Información de la Tarjeta Bancaria</h2>
                 <label for="tarjeta">Número de Tarjeta:</label>
                 <input type="text" id="tarjeta" name="tarjeta" required>
             </div>
@@ -59,8 +60,32 @@
                 <input type="text" id="titular" name="titular" required>
             </div>
             <div>
-                <label for="expiracion">Fecha de Expiración:</label>
-                <input type="month" id="expiracion" name="expiracion" required>
+                <label for="mes">Fecha de Expiración:</label>
+                <select id="mes" name="mes" required>
+                    <option value="" disabled selected>Mes</option>
+                    <option value="01">Enero</option>
+                    <option value="02">Febrero</option>
+                    <option value="03">Marzo</option>
+                    <option value="04">Abril</option>
+                    <option value="05">Mayo</option>
+                    <option value="06">Junio</option>
+                    <option value="07">Julio</option>
+                    <option value="08">Agosto</option>
+                    <option value="09">Septiembre</option>
+                    <option value="10">Octubre</option>
+                    <option value="11">Noviembre</option>
+                    <option value="12">Diciembre</option>
+                </select>
+                
+                <select id="anio" name="anio" required>
+                    <option value="" disabled selected>Año</option>
+                    <script>
+                        let anioActual = new Date().getFullYear();
+                        for (let i = anioActual; i <= anioActual + 10; i++) {
+                            document.write(`<option value="${i}">${i}</option>`);
+                        }
+                    </script>
+                </select>
             </div>
             <div>
                 <label for="cvv">CVV:</label>
