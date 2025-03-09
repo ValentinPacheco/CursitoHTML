@@ -61,32 +61,39 @@
             </div>
             <div>
                 <label for="mes">Fecha de Expiración:</label>
-                <select id="mes" name="mes" required>
-                    <option value="" disabled selected>Mes</option>
-                    <option value="01">Enero</option>
-                    <option value="02">Febrero</option>
-                    <option value="03">Marzo</option>
-                    <option value="04">Abril</option>
-                    <option value="05">Mayo</option>
-                    <option value="06">Junio</option>
-                    <option value="07">Julio</option>
-                    <option value="08">Agosto</option>
-                    <option value="09">Septiembre</option>
-                    <option value="10">Octubre</option>
-                    <option value="11">Noviembre</option>
-                    <option value="12">Diciembre</option>
-                </select>
+                <div>
+                    <label for="mes">Fecha de Expiración:</label>
+                    <select id="mes" name="mes" required>
+                        <option value="" disabled selected>Mes</option>
+                        <option value="01">Enero</option>
+                        <option value="02">Febrero</option>
+                        <option value="03">Marzo</option>
+                        <option value="04">Abril</option>
+                        <option value="05">Mayo</option>
+                        <option value="06">Junio</option>
+                        <option value="07">Julio</option>
+                        <option value="08">Agosto</option>
+                        <option value="09">Septiembre</option>
+                        <option value="10">Octubre</option>
+                        <option value="11">Noviembre</option>
+                        <option value="12">Diciembre</option>
+                    </select>
+                    
+                    <select id="anio" name="anio" required>
+                        <option value="" disabled selected>Año</option>
+                    </select>
+                </div>
                 
-                <select id="anio" name="anio" required>
-                    <option value="" disabled selected>Año</option>
-                    <script>
-                        let anioActual = new Date().getFullYear();
-                        for (let i = anioActual; i <= anioActual + 10; i++) {
-                            document.write(`<option value="${i}">${i}</option>`);
-                        }
-                    </script>
-                </select>
-            </div>
+                <script>
+                    let selectAnio = document.getElementById("anio");
+                    for (let i = 2025; i <= 2100; i++) {
+                        let opcion = document.createElement("option");
+                        opcion.value = i;
+                        opcion.textContent = i;
+                        selectAnio.appendChild(opcion);
+                    }
+                </script>
+                
             <div>
                 <label for="cvv">CVV:</label>
                 <input type="text" id="cvv" name="cvv" required>
