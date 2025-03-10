@@ -98,7 +98,9 @@ section {
 .servicio h3 {
     margin-top: 0;
 }
-
+.servicio p {
+    font-size: 18px; /* Tamaño de letra aumentado */
+}
 #contacto {
     background-color: #ffffff;
     color: #000000;
