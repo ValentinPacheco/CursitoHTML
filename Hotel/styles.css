@@ -3,70 +3,143 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
+    background-color: #f4f4f4;
 }
+
+header {
+    background-color: #333;
+    color: rgb(244, 244, 244);
+    padding: 1em;
+    display: flex; /* Añadido para usar flexbox */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Alinea verticalmente el contenido */
+}
+header div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 20px; /* Añade margen a los lados del div para espaciar */
+}
+
 header img {
     border-radius: 50%;
     height: 120px;
     width: 120px;
     object-fit: cover;
+    margin-bottom: 10px; /* Ajusta el margen según sea necesario */
 }
-header {
-    background-color: #333;
-    color: white;
-    padding: 1em;
-}
+
 header h1 {
-    display: inline-block; 
     padding: 10px 20px;
     border: 2px solid #ffffff;
     letter-spacing: 3px; 
     font-weight: bold;
+    margin: 10px 0;
+    text-align: center; /* Asegura que el texto dentro del h1 esté centrado */
 }
 
 nav ul {
     list-style: none;
     padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Centra los elementos de la navegación */
 }
-
 nav ul li {
-    display: inline;
     margin: 0 15px;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
+    font-weight: bold;
 }
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
 
 section {
-    padding: 20px;
+    padding: 40px 20px;
+    margin: 20px 0;
+    background-color: rgb(248, 248, 248);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.habitacion {
-    border: 1px solid #ddd;
+#inicio {
+    background-image: url('fondoHotel.jpg');
+    background-size: cover;
+    color: rgb(0, 0, 0);
+    padding: 60px 20px;
+    border-radius: 10px;
+}
+
+#inicio h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+#inicio p {
+    font-size: 1.2em;
+}
+
+#descripcion-historia {
+    display: flex;
+    justify-content: space-around; /* Espacia las columnas */
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#descripcion-historia .column {
+    flex: 1; /* Permite que las columnas ocupen el mismo espacio */
     margin: 10px;
-    padding: 15px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#descripcion-historia h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+#descripcion-historia p {
+    font-size: 1em;
+    line-height: 1.6;
 }
 
 footer {
     background-color: #333;
-    color: white;
+    color: rgb(255, 255, 255);
     padding: 10px;
     margin-top: 20px;
 }
+
+footer p {
+    margin: 0;
+}
+
 .slideshow-container {
-    max-width: 1000px;
+    max-width: 800px;
     position: relative;
     margin: auto;
+    border: 10px solid #333; /* Color del marco */
+    border-radius: 19px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para darle profundidad */
+    overflow: hidden; /* Para que las imágenes no sobresalgan del marco */
 }
 
-.mySlides {
-    display: none;
+.mySlides img {
+    border-radius: 10px; /* Bordes redondeados para las imágenes */
 }
-
 .fade {
     animation-name: fade;
-    animation-duration: 1.5s;
+    animation-duration: 3s;
 }
 
 @keyframes fade {
