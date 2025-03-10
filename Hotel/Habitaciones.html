@@ -7,19 +7,21 @@
     <link rel="stylesheet" href="stylesHabitaciones.css">
 </head>
 <body>
-    <header>
-        <h1 class="titulo-decorado">Conoce nuestras habitaciones</h1>
-        <nav>
-            <ul>
-                <li><a href="PaginaPrincipal.html">Inicio</a></li>
-                <li><a href="Habitaciones.html">Habitaciones</a></li>
-                <li><a href="Reservación.html">Reservación</a></li>
-                <li><a href="servicios.html">Servicios</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
+    <header style="display: flex; align-items: center;">
+        <img src="logoHotel.png" alt="Logo de Hotel Paraíso" style="height: 120px; margin-right: 20px;">
+        <div>
+            <h1>Conoce nuestras habitaciones</h1>
+            <nav>
+                <ul style="display: flex; list-style: none; padding: 100; margin: 1000;">
+                    <li><a href="PaginaPrincipal.html">Inicio</a></li>
+                    <li><a href="Habitaciones.html">Habitaciones</a></li>
+                    <li><a href="Servicios.html">Servicios</a></li>
+                    <li><a href="Reservación.html">Reservaciones</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    
     <section>
         <h2>¡Tu confort es nuestra prioridad!</h2>
         <div class="habitacion">
@@ -91,8 +93,15 @@
         <p>Email: info@hotelparaiso.com</p>
         <p>Facebook: https://www.facebook.com/HotelParaiso</p>
         <p>Instagram: https://www.instagram.com/HotelParaiso</p>
-        <p>Teléfono: +52 123 456 7890</p>        
+        <p>Teléfono: +52 123 456 7890</p>
+        <div class="iconos-contacto">
+            <a href="https://www.facebook.com/HotelParaiso" target="_blank"><img src="facebookicon.png" alt="Facebook"></a>
+            <a href="https://www.instagram.com/HotelParaiso" target="_blank"><img src="instaicon.png" alt="Instagram"></a>
+            <a href="mailto:info@hotelparaiso.com"><img src="emailicon.png" alt="Email"></a>
+            <a href="tel:+521234567890"><img src="telefonoicon.png" alt="Teléfono"></a>
+        </div>
     </section>
+    
     <footer>
         <p>&copy; 2025 Hotel Paraíso. Todos los derechos reservados.</p>
     </footer>
