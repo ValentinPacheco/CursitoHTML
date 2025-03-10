@@ -3,6 +3,8 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
+    background-color: #f4f4f4;
+
 }
 
 header {
@@ -60,6 +62,41 @@ nav ul li a:hover {
 
 section {
     padding: 20px;
+}
+
+.servicios {
+    padding: 20px;
+    text-align: center;
+}
+
+.servicios h2 {
+    margin-bottom: 20px;
+    font-size: 30px;
+    border-bottom: 2px solid #333;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.servicio {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+}
+
+.servicio img {
+    max-width: 300px;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+.servicio h3 {
+    margin-top: 0;
 }
 
 #contacto {
