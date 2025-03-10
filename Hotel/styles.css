@@ -87,7 +87,7 @@ section {
 
 #descripcion-historia {
     display: flex;
-    justify-content: space-around; /* Espacia las columnas */
+    justify-content: space-around;
     padding: 20px;
     background-color: white;
     border-radius: 10px;
@@ -95,7 +95,7 @@ section {
 }
 
 #descripcion-historia .column {
-    flex: 1; /* Permite que las columnas ocupen el mismo espacio */
+    flex: 1;
     margin: 10px;
     padding: 20px;
     background-color: #f9f9f9;
@@ -111,6 +111,14 @@ section {
 #descripcion-historia p {
     font-size: 1em;
     line-height: 1.6;
+}
+
+.hotel-image {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 footer {
